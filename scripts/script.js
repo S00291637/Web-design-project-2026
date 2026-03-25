@@ -1,6 +1,6 @@
 /**
  * Tipa shkola — Логика интерфейса
-    * Автор: [Vladislav]
+ * Все функции ИИ удалены. Оставлены только базовые скрипты для анимаций и UI.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
-                    block: 'start'
+                    block: 'start'   
                 });
             }
         });
