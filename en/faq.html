@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Data for SEO -->
+    <meta name="description" content="FAQ about Tipa shkola mental arithmetic school. Student web design project.">
+    <meta name="keywords" content="mental arithmetic, child education, Tipa shkola FAQ, web development project">
+    <title>FAQ | Tipa shkola - Questions and Answers</title>
+    
+    <link rel="icon" type="image/png" href="../img/logoTS.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Internal Styling -->
+    <style>
+        /* Using Id selector */
+        #faq-main-container {
+            padding-top: calc(var(--nav-height) + 40px);
+            /* Using background image */
+            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            background-attachment: fixed;
+        }
+
+        /* Newspaper columns with column-rule */
+        .newspaper-layout {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 2px dashed var(--primary);
+            margin: 40px 0;
+            text-align: justify;
+        }
+
+        /* Statistical Table */
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: var(--surface);
+            border: 1px solid var(--primary); /* Borders */
+        }
+        .stats-table th, .stats-table td {
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stats-table th { background: rgba(241, 196, 15, 0.2); color: var(--primary); }
+
+        /* Floated image */
+        .floated-content img {
+            float: right;
+            margin: 0 0 20px 20px;
+            border: 3px double var(--primary);
+            padding: 5px;
+            width: 250px;
+        }
+
+        /* Required fields */
+        .required-star { color: #ff4757; font-weight: bold; }
+
+        /* Different shaped bullet points */
+        .unordered-custom { list-style-type: square; }
+        .ordered-custom { list-style-type: upper-roman; }
+
+        .sources-section {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Nav actions alignment */
+        .nav-actions {
+            display: flex !important;
+            align-items: center !important;
+            gap: 20px !important;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            line-height: 1;
+        }
+
+        .disclaimer-box {
+            border: 2px solid #f1c40f; 
+            padding: 20px; 
+            border-radius: 15px; 
+            margin-bottom: 40px; 
+            background: rgba(0,0,0,0.3);
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <nav class="navbar-nav" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">
+                <img src="../img/logoTS.png" alt="Logo" class="logo-img">
+                <span>Tipa shkola</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faq.html" class="active">FAQ</a>
+                <a href="parents.html">Parents</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch">
+                    <a href="../ru/faq.html" style="text-decoration: none; color: inherit; padding-right: 5px;">RU</a> | <span class="active">EN</span>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="faq-main-container">
+    <div class="container">
+        <section>
+            <h1 style="text-align: center; color: var(--primary); text-transform: uppercase;">Questions and Answers</h1>
+            <p style="text-align: center; margin-bottom: 30px; font-style: italic;">
+                This section contains technical elements to demonstrate development skills.
+            </p>
+            
+            <div class="disclaimer-box">
+                <strong>This site is a student project. The information provided is not a public offer.</strong><br>
+                All information on the site is for demonstration purposes only and does not reflect reality, but since this is a real project, updates with actual data are expected and it will be used based on the approved layout in the future.
+                <br><a href="#contact-form-section" style="color: var(--primary); display: inline-block; margin-top: 10px;">Contact the developer &darr;</a>
+            </div>
+        </section>
+
+        <div style="display: grid; grid-template-columns: 3fr 1fr; gap: 30px;">
+            <article class="floated-content">
+                <section>
+                    <h2><span style="color: var(--primary);">01.</span> About the Method</h2>
+                    <img src="../img/img_for_index/IMG_3452.jpg" alt="[Student Image]">
+                    <p>Mental arithmetic is a unique intelligence development system based on the use of the ancient abacus counting tool. During the learning process, children learn to visualize calculations, which activates the right hemisphere of the brain. This helps not only in mathematics but also in creative endeavors.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul class="unordered-custom"> <!-- Unordered list -->
+                        <li>Individual approach to every child</li>
+                        <li>Certified educators with over 5 years of experience</li>
+                        <li>Unique online platform for practice</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2><span style="color: var(--primary);">02.</span> Learning Process</h2>
+                    <div class="newspaper-layout"> <!-- Newspaper columns -->
+                        The program is divided into difficulty levels. Each level lasts an average of 3-4 months. We don't just teach counting — we develop perseverance, photographic memory, and self-confidence. Our students become winners of international competitions. The exercise system is built from simple to complex, which eliminates stress for the child. Parents receive weekly progress reports.
+                    </div>
+                </section>
+            </article>
+
+            <aside> <!-- Aside Section -->
+                <div style="background: var(--surface); padding: 20px; border-radius: 15px; border-left: 5px solid var(--primary);">
+                    <h4 style="margin-top: 0;">Enrollment Steps</h4>
+                    <ol class="ordered-custom"> <!-- Ordered list -->
+                        <li>Apply on the website</li>
+                        <li>Trial lesson</li>
+                        <li>Level testing</li>
+                        <li>Course payment</li>
+                        <li>Start of classes</li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <section>
+            <h2>Performance Statistics (2025-2026)</h2>
+            <table class="stats-table"> <!-- Statistical Table -->
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Group "A"</th>
+                        <th>Group "B"</th>
+                        <th>Target for the Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Average counting speed</td>
+                        <td>0.5 sec/op</td>
+                        <td>0.8 sec/op</td>
+                        <td>&lt; 0.4 sec</td>
+                    </tr>
+                    <tr>
+                        <td>Concentration level</td>
+                        <td>85%</td>
+                        <td>78%</td>
+                        <td>95%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="text-align: center; margin: 50px 0;">
+            <h2>School Video Presentation</h2>
+            <div style="max-width: 800px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 0 30px rgba(241, 196, 15, 0.3); background: #000; position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src="https://www.youtube.com/embed/S_8qKx7u-o8" 
+                    title="Mental Arithmetic Presentation" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="margin-top: 15px;"><a href="https://www.instagram.com/reel/ClEXqjGvBID/" target="_blank" style="color: var(--primary);">Watch the original clip on Instagram</a></p>
+        </section>
+
+        <section id="contact-form-section" style="padding: 50px 0;">
+            <div class="contact-form">
+                <h2 style="text-align: center;">Ask a Question (GET Method)</h2>
+                <!-- Form with GET method -->
+                <form action="faq.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Your Name <span class="required-star">*</span></label>
+                        <input type="text" id="name" name="student_name" required placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="student_email" required placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Your Message</label>
+                        <textarea id="msg" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: 2px solid white;">Send (URL Get)</button>
+                </form>
+
+                <div id="url-display" style="margin-top: 20px; display: none; padding: 15px; background: rgba(46, 204, 113, 0.2); border-radius: 10px;">
+                    <h5 style="color: #2ecc71; margin-top: 0;">Data received from URL:</h5>
+                    <p id="results-text" style="font-size: 14px;"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sources-section">
+            <h5>Links and References:</h5>
+            <ul>
+                <li>Images: <a href="https://unsplash.com" target="_blank" style="color: inherit;">Unsplash Public Domain</a></li>
+                <li>Texts: <a href="https://en.wikipedia.org/wiki/Mental_calculation" target="_blank" style="color: inherit;">Wikipedia (Mental Calculation)</a></li>
+                <li>Video: <a href="https://www.youtube.com" target="_blank" style="color: inherit;">YouTube Education</a></li>
+                <li>Video: <a href="https://www.instagram.com" target="_blank" style="color: inherit;">Instagram</a></li>
+                <li>Background images: <a href="https://www.transparenttextures.com" target="_blank" style="color: inherit;">Transparent Textures</a></li>
+            </ul>
+            <a href="#faq-main-container" style="display: block; text-align: center; margin-top: 20px; color: var(--primary); text-decoration: none;">&uarr; Back to the top of the page</a>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="../img/logoTS.png" alt="Logo" class="logo-img">
+                    <span>Tipa shkola</span>
+                </div>
+                <p>Developing great minds from early childhood. This site is a student project (College Project).</p>
+            </div>
+            <nav class="footer-nav">
+                <h4 style="color: white;">Navigation</h4>
+                <a href="../en/index.html">Home</a>
+                <a href="../en/pricing.html">Pricing</a>
+                <a href="../en/faq.html">FAQ</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 Tipa shkola Academy. This is a student project. &trade;</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../scripts/script.js"></script>
+<script>
+    // Script to display data from URL
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        if(params.has('student_name')) {
+            const box = document.getElementById('url-display');
+            const text = document.getElementById('results-text');
+            box.style.display = 'block';
+            text.innerHTML = `Name: <b>${params.get('student_name')}</b> | Email: <b>${params.get('student_email')}</b>`;
+            document.getElementById('contact-form-section').scrollIntoView();
+        }
+    }
+</script>
+</body>
+</html>

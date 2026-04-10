@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Мета-данные для SEO (пункт чек-листа - Maximise SEO) -->
+    <meta name="description" content="Ответы на вопросы о школе ментальной арифметики Tipa shkola. Студенческий проект по веб-дизайну.">
+    <meta name="keywords" content="ментальная арифметика, обучение детей, Tipa shkola FAQ, веб-разработка проект">
+    <title>FAQ | Tipa shkola - Вопросы и ответы</title>
+    
+    <link rel="icon" type="image/png" href="../img/logoTS.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Внешняя таблица стилей (External Style Sheet) -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Внутренние стили (Internal Styling - пример для демонстрации скилла) -->
+    <style>
+        /* Использование ID селектора (CSS Id selector) */
+        #faq-main-container {
+            padding-top: calc(var(--nav-height) + 40px);
+            /* Использование фонового изображения (Use of background image) */
+            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            background-attachment: fixed;
+        }
+
+        /* Газетные колонки (Newspaper columns с column-rule) */
+        .newspaper-layout {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 2px dashed var(--primary);
+            margin: 40px 0;
+            text-align: justify;
+        }
+
+        /* Таблица данных (Table of statistical information) */
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: var(--surface);
+            border: 1px solid var(--primary); /* Использование границ (borders) */
+        }
+        .stats-table th, .stats-table td {
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stats-table th { background: rgba(241, 196, 15, 0.2); color: var(--primary); }
+
+        /* Изображение с обтеканием (Floated image) */
+        .floated-content img {
+            float: right;
+            margin: 0 0 20px 20px;
+            border: 3px double var(--primary);
+            padding: 5px;
+            width: 250px;
+        }
+
+        /* Обязательные поля формы */
+        .required-star { color: #ff4757; font-weight: bold; }
+
+        /* Разные типы маркеров для списков (Different shaped bullet points) */
+        .unordered-custom { list-style-type: square; }
+        .ordered-custom { list-style-type: upper-roman; }
+
+        .sources-section {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Исправление съезжающих кнопок в навигации */
+        .nav-actions {
+            display: flex !important;
+            align-items: center !important;
+            gap: 20px !important;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            line-height: 1;
+        }
+
+        .disclaimer-box {
+            border: 2px solid #f1c40f; 
+            padding: 20px; 
+            border-radius: 15px; 
+            margin-bottom: 40px; 
+            background: rgba(0,0,0,0.3);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <nav class="navbar-nav" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">
+                <img src="../img/logoTS.png" alt="Logo" class="logo-img">
+                <span>Tipa shkola</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="pricing.html">Цены</a>
+                <a href="faq.html" class="active">FAQ</a>
+                <a href="parents.html">Родителям</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch">
+                    <span class="active">RU</span> | <a href="../en/index.html" style="text-decoration: none; color: inherit; padding-left: 5px;">EN</a>
+                </div>
+                <button class="btn btn-primary">Войти</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="faq-main-container">
+    <div class="container">
+        <section>
+            <h1 style="text-align: center; color: var(--primary); text-transform: uppercase;">Вопросы и Ответы</h1>
+            <p style="text-align: center; margin-bottom: 30px; font-style: italic;">
+                Этот раздел содержит технические элементы для демонстрации навыков разработки.
+            </p>
+            
+            <div class="disclaimer-box">
+                <strong>Внимание:</strong> Данная информация на сайте представлена исключительно в демонстрационных целях и не соответствует действительности. 
+                Так как это реальный студенческий проект, ожидаются правки с настоящими данными, и в дальнейшем сайт будет использоваться исходя из одобренного макета.
+                <br><a href="#contact-form-section" style="color: var(--primary); display: inline-block; margin-top: 10px;">Связаться с разработчиком &darr;</a>
+            </div>
+        </section>
+
+        <div style="display: grid; grid-template-columns: 3fr 1fr; gap: 30px;">
+            <article class="floated-content">
+                <section>
+                    <h2><span style="color: var(--primary);">01.</span> О методике</h2>
+                    <img src="../img/img_for_index/IMG_3452.jpg" alt="[Изображение ученика]">
+                    <p>Ментальная арифметика — это уникальная система развития интеллекта, основанная на использовании древних счетов абакус. В процессе обучения дети учатся визуализировать расчеты, что активирует правое полушарие мозга. Это помогает не только в математике, но и в творчестве.</p>
+                    
+                    <h3>Почему выбирают нас?</h3>
+                    <ul class="unordered-custom"> <!-- Маркированный список -->
+                        <li>Индивидуальный подход к каждому ребенку</li>
+                        <li>Сертифицированные педагоги с опытом от 5 лет</li>
+                        <li>Уникальная онлайн-платформа для тренировок</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2><span style="color: var(--primary);">02.</span> Процесс обучения</h2>
+                    <div class="newspaper-layout"> <!-- Газетные колонки -->
+                        Программа разделена на уровни сложности. Каждый уровень длится в среднем 3-4 месяца. Мы не просто учим считать — мы развиваем усидчивость, фотографическую память и уверенность в себе. Наши ученики становятся победителями международных олимпиад. Система упражнений построена от простого к сложному, что исключает стресс у ребенка. Родители получают еженедельные отчеты о прогрессе.
+                    </div>
+                </section>
+            </article>
+
+            <aside> <!-- Секция Aside -->
+                <div style="background: var(--surface); padding: 20px; border-radius: 15px; border-left: 5px solid var(--primary);">
+                    <h4 style="margin-top: 0;">Этапы поступления</h4>
+                    <ol class="ordered-custom"> <!-- Нумерованный список -->
+                        <li>Заявка на сайте</li>
+                        <li>Пробный урок</li>
+                        <li>Тестирование уровня</li>
+                        <li>Оплата курса</li>
+                        <li>Начало занятий</li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <section>
+            <h2>Статистика успеваемости (2025-2026)</h2>
+            <table class="stats-table"> <!-- Таблица данных -->
+                <thead>
+                    <tr>
+                        <th>Показатель</th>
+                        <th>Группа "А"</th>
+                        <th>Группа "Б"</th>
+                        <th>Цель на год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Средняя скорость счета</td>
+                        <td>0.5 сек/опер</td>
+                        <td>0.8 сек/опер</td>
+                        <td>&lt; 0.4 сек</td>
+                    </tr>
+                    <tr>
+                        <td>Уровень концентрации</td>
+                        <td>85%</td>
+                        <td>78%</td>
+                        <td>95%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="text-align: center; margin: 50px 0;">
+            <h2>Видео-презентация школы</h2>
+            <div style="max-width: 800px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 0 30px rgba(241, 196, 15, 0.3); background: #000; position: relative; padding-bottom: 56.25%; height: 0;">
+                <!-- Исправленное встраивание видео -->
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src="https://www.youtube.com/watch?v=nTn9gVqRfKY" 
+                    title="Mental Arithmetic Presentation" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="margin-top: 15px;"><a href="https://www.instagram.com/reel/ClEXqjGvBID/" target="_blank" style="color: var(--primary);">Смотреть оригинальный ролик в Instagram</a></p>
+        </section>
+
+        <section id="contact-form-section" style="padding: 50px 0;">
+            <div class="contact-form">
+                <h2 style="text-align: center;">Задать вопрос (GET Method)</h2>
+                <!-- Форма с методом GET -->
+                <form action="faq.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Ваше имя <span class="required-star">*</span></label>
+                        <input type="text" id="name" name="student_name" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="student_email" required placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Ваше сообщение</label>
+                        <textarea id="msg" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: 2px solid white;">Отправить (URL Get)</button>
+                </form>
+
+                <div id="url-display" style="margin-top: 20px; display: none; padding: 15px; background: rgba(46, 204, 113, 0.2); border-radius: 10px;">
+                    <h5 style="color: #2ecc71; margin-top: 0;">Данные из URL получены:</h5>
+                    <p id="results-text" style="font-size: 14px;"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sources-section">
+            <h5>Ссылки и источники (References):</h5>
+            <ul>
+                <li>Изображения: <a href="https://unsplash.com" target="_blank" style="color: inherit;">Unsplash Public Domain</a></li>
+                <li>Тексты: <a href="https://ru.wikipedia.org/wiki/Ментальная_арифметика" target="_blank" style="color: inherit;">Wikipedia (Mental Math)</a></li>
+                <li>Видео: <a href="https://www.youtube.com" target="_blank" style="color: inherit;">YouTube Education</a></li>
+            </ul>
+            <a href="#faq-main-container" style="display: block; text-align: center; margin-top: 20px; color: var(--primary); text-decoration: none;">&uarr; Вернуться к началу страницы</a>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="../img/logoTS.png" alt="Logo" class="logo-img">
+                    <span>Tipa shkola</span>
+                </div>
+                <p>Развиваем великие умы с раннего детства. Данный сайт — студенческий проект (College Project).</p>
+            </div>
+            <nav class="footer-nav">
+                <h4 style="color: white;">Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="pricing.html">Цены</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 Tipa shkola Academy. Это студенческий проект. &trade;</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../scripts/script.js"></script>
+<script>
+    // Скрипт для отображения данных из URL (пункт чек-листа)
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        if(params.has('student_name')) {
+            const box = document.getElementById('url-display');
+            const text = document.getElementById('results-text');
+            box.style.display = 'block';
+            text.innerHTML = `Имя: <b>${params.get('student_name')}</b> | Email: <b>${params.get('student_email')}</b>`;
+            document.getElementById('contact-form-section').scrollIntoView();
+        }
+    }
+</script>
+</body>
+</html>
