@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тарифы | Tipa shkola</title>
-    <link rel="icon" type="image/png" href="img/logoTS.png">
+    <link rel="icon" type="image/png" href="../img/logoTS.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <header class="navbar">
     <div class="container">
         <a href="index.html" class="logo">
-            <img src="img/logoTS.png" alt="Tipa shkola Logo" class="logo-img">
+            <img src="../img/logoTS.png" alt="Tipa shkola Logo" class="logo-img">
             <span>Tipa shkola</span>
         </a>
         <nav class="nav-links">
-            <a href="index.html">Главная</a>
-            <a href="pricing.html" class="active">Ценообразование</a>
+            <a href="../ru/index.html">Главная</a>
+            <a href="../ru/pricing.html" class="active">Ценообразование</a>
             <a href="#">FAQ</a>
-            <a href="parents.html">Для родителей</a>
+            <a href="../ru/parents.html">Для родителей</a>
         </nav>
-        <button class="btn btn-primary">Войти</button>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 20px;">
+            <div class="lang-switch" style="font-size: 14px; font-weight: 600;">
+                <span style="color: var(--primary);">RU</span> | <a href="../en/pricing.html" style="color: var(--text-muted); text-decoration: none;">EN</a>
+            </div>
+            <button class="btn btn-primary">Войти</button>
+        </div>
     </div>
 </header>
 
@@ -81,10 +86,10 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="logo">
-                    <img src="img/logoTS.png" alt="Tipa shkola Logo" class="logo-img">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <img src="../img/logoTS.png" alt="Tipa shkola Logo" class="logo-img">
                     <span>Tipa shkola</span>
-                </div>
+                </a>
                 <p>Развиваем великие умы с раннего детства.</p>
             </div>
         </div>
@@ -94,6 +99,6 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>
